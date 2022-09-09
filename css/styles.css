@@ -472,7 +472,7 @@ img {
 }
 
 .box:hover .box-overlay {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 /* Cards styles */
@@ -722,7 +722,7 @@ img {
   height: 15px;
   position: absolute;
   fill: var(--notblack);
-  border-radius: 11%;
+  border-radius: 2px;
 }
 
 .checkbox-border {
@@ -752,6 +752,9 @@ img {
 
 .icon-vector {
   fill: var(--white);
+  width: 11px;
+  height: 8px;
+  border: 4px solid var(--white);
 }
 
 .input-comment {
