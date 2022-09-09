@@ -722,7 +722,7 @@ img {
   height: 15px;
   position: absolute;
   fill: var(--notblack);
-  border-radius: 20%;
+  border-radius: 11%;
 }
 
 .checkbox-border {
