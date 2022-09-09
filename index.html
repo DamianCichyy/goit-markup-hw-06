@@ -712,12 +712,70 @@
               </li>
             </ul>
           </div>
+          <div class="footer-label">
+            <form>
+              <label class="email-box-label">
+                Zapisz się do newslettera
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  class="email-box"
+                />
+              </label>
+            </form>
+            <div class="footer-button-container">
+              <button type="submit" class="footer-label-button">
+                Zapisz się<svg width="24" height="24">
+                  <use href="images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
 
     <div class="modal-background is-hidden" data-modal>
       <div class="modal">
+        <h3 class="modal-header">Zostaw swoje dane w formularzu poniżej</h3>
+
+        <div class="labels">
+          <label for="user_name" class="label"
+            >Imie
+            <a href="#" class="label-icons"
+              ><svg width="15" height="13">
+                <use
+                  href="images/icons.svg#icon-person"
+                  width="12"
+                  x="1.5"
+                  height="12"
+                  y="0.5"
+                ></use>
+              </svg>
+            </a>
+            <input type="text" class="input" />
+          </label>
+
+          <label for="user_phone" class="label">
+            <svg class="label-icons">
+              <use></use>
+            </svg>
+            Telefon<input type="text" class="input" />
+          </label>
+
+          <label for="user_email" class="label">
+            <svg class="label-icons">
+              <use></use>
+            </svg>
+            E-mail<input type="text" class="input" />
+          </label>
+
+          <label for="user_comment" class="label">
+            Komentarz<input type="text" class="input" />
+          </label>
+        </div>
+
         <button class="modal-button" data-modal-close>
           <svg class="svg-modal-button">
             <use
@@ -731,7 +789,6 @@
         </button>
       </div>
     </div>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>
