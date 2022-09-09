@@ -740,7 +740,7 @@
       <div class="modal">
         <h3 class="modal-header">Zostaw swoje dane w formularzu poniżej</h3>
 
-        <div class="labels">
+        <form class="labels">
           <label for="user_name" class="label"
             >Imie
             <a href="#" class="label-icons"
@@ -754,27 +754,76 @@
                 ></use>
               </svg>
             </a>
-            <input type="text" class="input" />
+            <input type="text" name="text" class="input" />
           </label>
 
-          <label for="user_phone" class="label">
-            <svg class="label-icons">
-              <use></use>
-            </svg>
-            Telefon<input type="text" class="input" />
+          <label for="user_phone" class="label"
+            >Imie
+            <a href="#" class="label-icons"
+              ><svg width="15" height="13">
+                <use
+                  href="images/icons.svg#icon-phone"
+                  width="13"
+                  x="1"
+                  height="13"
+                ></use>
+              </svg>
+            </a>
+            <input type="tel" name="number" class="input" />
           </label>
 
-          <label for="user_email" class="label">
-            <svg class="label-icons">
-              <use></use>
-            </svg>
-            E-mail<input type="text" class="input" />
+          <label for="user_email" class="label"
+            >Imie
+            <a href="#" class="label-icons"
+              ><svg width="15" height="13">
+                <use
+                  href="images/icons.svg#icon-envelope-2"
+                  width="15"
+                  height="13"
+                ></use>
+              </svg>
+            </a>
+            <input type="email" name="email" class="input" />
           </label>
 
           <label for="user_comment" class="label">
-            Komentarz<input type="text" class="input" />
+            Komentarz<textarea
+              class="input input-comment"
+              name="comment"
+              placeholder="Wprowadź tekst"
+            ></textarea>
           </label>
-        </div>
+
+          <label class="label label-checkbox">
+            <input type="checkbox" class="input-size hidden" />
+
+            <svg class="checkbox-window">
+              <use
+                class="checkbox-border"
+                href="images/icons.svg#icon-square"
+                width="16"
+                height="15"
+              ></use>
+
+              <use
+                class="icon-vector"
+                href="images/icons.svg#icon-vector"
+                width="11"
+                height="8"
+                x="2.5"
+                y="3.5"
+              ></use>
+            </svg>
+
+            <span class="checkbox-span"
+              >Oświadczam iż akceptuje
+              <a href="#" class="input-link">Regulamin</a> i
+              <a href="#" class="input-link">Politykę Prywatności.</a></span
+            >
+          </label>
+
+          <button type="submit" class="checkbox-button">Wyślij</button>
+        </form>
 
         <button class="modal-button" data-modal-close>
           <svg class="svg-modal-button">
