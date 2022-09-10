@@ -117,7 +117,7 @@ img {
 }
 
 /**/
-/* Header tyles */
+/* Header styles */
 /**/
 
 .header-border {
@@ -563,7 +563,6 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: scale(0.9);
 }
 
 .modal-background {
@@ -573,9 +572,6 @@ img {
   left: 0px;
   top: 0px;
   background-color: var(--backgroundmodalwindow);
-  transition-property: all;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button {
@@ -605,4 +601,14 @@ img {
   cursor: pointer;
   background-color: var(--blue);
   fill: var(--white);
+}
+
+/**/
+/* Forms & Labels & Inputs styles */
+/**/
+
+.footer-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
