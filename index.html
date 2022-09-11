@@ -720,18 +720,31 @@
             novalidate
             class="footer-form"
           >
-            <label for=""
+            <label for="newsletter" class="footer-label"
               >Zapisz się do newslettera
-              <input type="email" name="email" placeholder="E-mail" />
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="footer-input"
+              />
             </label>
-            <button></button>
+            <button type="submit" class="footer-button">
+              Zapisz się<svg class="footer-form-svg">
+                <use href="images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </footer>
     </div>
 
     <div class="modal-background is-hidden" data-modal>
-      <div class="modal modal-animation">
+      <div class="modal">
+        <h3 class="modal-header">Zostaw swoje dane w formularzu poniżej</h3>
+
+        <form></form>
+        
         <button class="modal-button" data-modal-close>
           <svg class="svg-modal-button">
             <use
