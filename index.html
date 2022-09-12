@@ -78,7 +78,9 @@
             <h1 class="header-one">
               EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
             </h1>
-            <button class="logo-button" data-modal-open>Zamów usługe</button>
+            <button class="logo-button button-active" data-modal-open>
+              Zamów usługe
+            </button>
           </div>
         </section>
 
@@ -729,7 +731,7 @@
                 class="footer-input"
               />
             </label>
-            <button type="submit" class="footer-button">
+            <button type="submit" class="footer-button button-active">
               Zapisz się<svg class="footer-form-svg">
                 <use href="images/icons.svg#icon-send"></use>
               </svg>
@@ -807,11 +809,11 @@
               name="agrees"
               value="agree"
               class="checkbox"
-              checked
+              required
             />
             <svg class="checkbox-svg">
               <use href="images/icons.svg#icon-square"></use>
-              <g>
+              <g class="vector">
                 <use
                   href="images/icons.svg#icon-vector"
                   width="11"
@@ -829,7 +831,9 @@
             </p>
           </label>
 
-          <button class="modal-button"></button>
+          <button type="submit" class="modal-send-button button-active">
+            Wyślij
+          </button>
         </form>
 
         <button class="modal-button" data-modal-close>
