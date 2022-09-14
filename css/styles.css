@@ -568,7 +568,8 @@ img {
   left: 0px;
   top: 0px;
   background-color: var(--backgroundmodalwindow);
-  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button {
@@ -798,7 +799,7 @@ img {
 }
 
 .modal-label:hover .modal-svg,
-.modal-svg:focus {
+.modal-input:focus-visible + .modal-svg {
   fill: var(--blue);
 }
 
